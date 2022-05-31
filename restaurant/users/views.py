@@ -37,9 +37,9 @@ class LogoutAPIView(generics.GenericAPIView):
     authentication_classes = (authentication.TokenAuthentication,)
     permission_classes = (IsAuthenticated,)
     def get(self, request, format=None):
-        # simply delete the token
+        # deleted the token
         request.user.auth_token.delete()
-        return Response({"message":"Logged Out and succefully Deleted Token"}, status=status.HTTP_200_OK)
+        return Response({"message":"Logged Out and Succefully Deleted Token"}, status=status.HTTP_200_OK)
    
 class ProfileView(generics.GenericAPIView):
     authentication_classes = (authentication.TokenAuthentication,)
