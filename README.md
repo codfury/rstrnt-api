@@ -2,7 +2,7 @@
 
 A RESTful api for Restaurant orders.
 
-This api created using django rest framework library.
+This api is created using django rest framework library.
 
 To start using the api,
 
