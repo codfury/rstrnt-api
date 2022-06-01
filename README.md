@@ -8,7 +8,7 @@ To start using the api,
 
 <ul>
 
-<li>Navigate to inside the folder and then create a new virtual environment to run the project
+<li>Navigate to inside the folder and then either create a new virtual environment to run the project or use the existing one named as "myvenv".
 
 Run this to create the env:
 
@@ -20,7 +20,7 @@ Then run in your bash terminal to activate the environment
 ```
 source env/bin/activate
 ```
-You can also follow this <a href='https://www.python.org/downloads/'>site</a> for more details.
+
 
 <li>After that navigate to the eshop folder where there is *requirements.txt* and using the command
 
