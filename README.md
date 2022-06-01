@@ -44,4 +44,4 @@ python manage.py runserver
 
 Then after these we are good to go for using the APIs.
 
-In postman to use the endpoints which requires authentication please generate a token using login/ endpoint and then insert the generated token as Key:Authorization and Value: Token <YOUR_GENERATED_TOKEN_HERE> in headers of your request.
+In postman or in browser to use the endpoints which requires authentication please generate a token using login/ endpoint and then insert the generated token as Key:Authorization and Value: Token <YOUR_GENERATED_TOKEN_HERE> in headers of your request, if using chrome then can also use the <a href=https://chrome.google.com/webstore/detail/modheader/idgpnmonknjnojddfkpgkljpfnnfcklj> chrome extension</a> for the same.
