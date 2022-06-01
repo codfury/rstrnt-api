@@ -22,7 +22,7 @@ source env/bin/activate
 ```
 
 
-<li>After that navigate to the eshop folder where there is *requirements.txt* and using the command
+<li>After that navigate to the restaurant folder where there is *requirements.txt* and using the command
 
 ```
 pip install requirements.txt
