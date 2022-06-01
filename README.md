@@ -22,7 +22,7 @@ source env/bin/activate
 ```
 
 
-<li>After that navigate to the restaurant folder where there is *requirements.txt* and using the command
+<li>After that navigate to the restaurant folder where there is *requirements.txt* and use the command
 
 ```
 pip install requirements.txt
@@ -32,6 +32,13 @@ pip install requirements.txt
 
 ```
 python manage.py createsuperuser
+```
+
+<li>Start the server using this command.
+
+
+```
+python manage.py runserver
 ```
 </ul>
 
