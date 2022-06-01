@@ -50,15 +50,14 @@ class LoginSerializer(serializers.Serializer):
     def validate(self, attrs):
         username = attrs.get("username")
         password = attrs.get("password")
+        print(username,password,22222222,attrs)
         if username is None or password is None:
             return Response({'error': 'Please provide both username and password'},
                             status=HTTP_400_BAD_REQUEST)
         user = authenticate(username=username, password=password)
         if not user:
-            return Response({'error': 'Invalid Credentials'},
-                            status=HTTP_404_NOT_FOUND)
+            raise serializers.ValidationError('Invalid Credentials', code='authentication')
         token, _ = Token.objects.get_or_create(user=user)
-
         attrs['user'] = user
         return attrs
         

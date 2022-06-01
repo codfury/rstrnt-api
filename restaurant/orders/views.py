@@ -98,10 +98,13 @@ class OrderDetailView(viewsets.ReadOnlyModelViewSet):
 
 
 class OrderCancelView(APIView):
+    permission_classes = (permissions.IsAuthenticated,)
+    authentication_classes = (authentication.TokenAuthentication,)
 
     def get(self,request,pk):
         order_id=pk
-        queryset =get_object_or_404(Order,id = order_id)
+        print(self.request.user)
+        queryset =get_object_or_404(Order,id = order_id,user=self.request.user)
         
         if(queryset and queryset.is_ordered):
             

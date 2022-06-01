@@ -12,7 +12,8 @@ class CartItem(models.Model):
     date_updated = models.DateField(auto_now_add=True)
 
     def sub_total(self):
-        return self.item.price * self.quantity
+        discount=int((self.item.discount/100)*self.item.price)
+        return (self.item.price-discount) * self.quantity
 
     def __str__(self) -> str:
         return str(self.id)
